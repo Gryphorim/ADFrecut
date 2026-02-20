@@ -641,7 +641,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - CFA";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icon_TBAS_T5_CFA_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_CFA.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
