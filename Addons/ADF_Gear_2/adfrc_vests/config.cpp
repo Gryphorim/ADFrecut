@@ -779,7 +779,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - DMR";
-		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_DMR_ca.paa";
+		picture = "";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -871,7 +871,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Grenadier";
-		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_Gren_ca.paa";
+		picture = "";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
