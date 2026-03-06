@@ -641,7 +641,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - CFA";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_CFA_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_CFA.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -687,7 +687,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Team Leader";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_TL_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_TL.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -733,7 +733,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Machine Gunner";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_LMG_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_MG.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -825,7 +825,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Engineer";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_Eng_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Eng.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -917,7 +917,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Breacher";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_Breacher_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -963,7 +963,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Operator";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_Operator_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1009,7 +1009,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - CQB";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_CDO_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_CQB.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1055,7 +1055,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Patrol Commander";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T5_PC_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_PC.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1607,7 +1607,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "JPC - Operator";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_JPC_Operator_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\JPC\JPC_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
