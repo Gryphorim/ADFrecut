@@ -11,9 +11,15 @@
    
    **Note:** This repository contains code and configurations only. 3D models are not included to keep the repo lightweight and protect original creators' work. The complete mod with all assets is available on the Steam Workshop.
 
+   ![GitHub last commit](https://img.shields.io/github/last-commit/IsoBones/ADFRecut?display_timestamp=author&style=for-the-badge&color=%23676252)
+   ![GitHub commits since latest release](https://img.shields.io/github/commits-since/IsoBones/ADFRecut/latest?sort=semver&style=for-the-badge&color=%23676252)
+   ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/IsoBones/ADFRecut?style=for-the-badge&label=ALL%20TIME%20COMMITS&color=%23676252)
+
    ## About
    
    A continuation of the *Australian Defence Force Uncut* mod from years ago, **ADF Re-Cut** aims to create an authentic and polished Arma 3 mod representing the Australian Defence Force.
+
+   ![Steam Release Date](https://img.shields.io/steam/release-date/2971219389?style=for-the-badge&logo=steam&label=RELEASE%20DATE&color=%23676252) ![Steam Update Date](https://img.shields.io/steam/update-date/2971219389?style=for-the-badge&logo=steam&label=LAST%20UPDATED&color=%23676252)
 
    ## Building
    
@@ -42,3 +48,4 @@
 
 
    
+
