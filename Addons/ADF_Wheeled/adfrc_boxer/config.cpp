@@ -1565,6 +1565,7 @@ class CfgVehicles
 				{
 					"ADFRC_boxer_360RND_30mm_HE",
 					"ADFRC_boxer_360RND_30mm_AP",
+					"ADFRC_boxer_360RND_30mm_AHEAD",
 					"ADFRC_boxer_600Rnd_762x51_Tracer",
 					"ADFRC_boxer_600Rnd_762x51_Tracer"
 				};
@@ -2256,6 +2257,7 @@ class CfgVehicles
 				{
 					"ADFRC_boxer_360RND_30mm_HE",
 					"ADFRC_boxer_360RND_30mm_AP",
+					"ADFRC_boxer_360RND_30mm_AHEAD",
 					"2Rnd_GAT_missiles",
 					"2Rnd_GAT_missiles",
 					"2Rnd_GAT_missiles",
