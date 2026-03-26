@@ -69,6 +69,29 @@ class cfgAmmo
 			frequency = 20;
 		};
 	};
+	class B_30mm_AHEAD;
+	class ADFRC_boxer_30mm_AHEAD: B_30mm_AHEAD
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		hit = 32;
+		indirectHit = 13;
+		indirectHitRange = 5;
+		explosive = 1;
+		proximityExplosion = 1;
+		explosionTime = -1;
+		proximtyFuseDistance = 5;
+		fuseDistance = 10;
+		caliber = 4;
+		tracerScale = 2.25;
+		airLock = 1;
+		canLock = 2;
+		class CamShakePlayerFire
+		{
+			power = 0.5;
+			duration = 0.25;
+			frequency = 20;
+		};
+	};
 	class B_30mm_APFSDS;
 	class ADFRC_boxer_30mm_AP: B_30mm_APFSDS
 	{
@@ -133,6 +156,16 @@ class cfgMagazines
 		tracersEvery = 1;
 		count = 125;
 	};
+	class 250Rnd_30mm_AHEAD_shells_Tracer_Red;
+	class ADFRC_boxer_360RND_30mm_AHEAD: 250Rnd_30mm_AHEAD_shells_Tracer_Red
+	{
+		scope = 2;
+		displayName = "30mm AHEAD";
+		displaynameshort = "PMC388 AHEAD";
+		ammo = "ADFRC_boxer_30mm_AHEAD";
+		tracersEvery = 1;
+		count = 125;
+	};
 	class 250Rnd_30mm_APDS_shells_Tracer_Red;
 	class ADFRC_boxer_360RND_30mm_AP: 250Rnd_30mm_APDS_shells_Tracer_Red
 	{
@@ -187,7 +220,7 @@ class cfgWeapons
 		scope = 1;
 		canlock = 2;
 		FCSMaxLeadSpeed = 70;
-		ballisticsComputer = 1+2+16;
+		ballisticsComputer = 1+2+4+8+16;
 		weaponLockSystem = 2+4;
 		weaponLockDelay = 2;
 		magazines[]=
@@ -284,7 +317,12 @@ class cfgWeapons
 	class ADFRC_boxer_mk30: autocannon_40mm_CTWS
 	{
 		displayName = "MK 30-2/ABM 30mm Autocannon";
-		muzzles[] = {"AP","HE"};
+		canlock = 2;
+		FCSMaxLeadSpeed = 270;
+		ballisticsComputer = 1+2+4+8+16;
+		weaponLockSystem = 2+4;
+		weaponLockDelay = 2;
+		muzzles[] = {"AP","HE","AHEAD"};
 		class GunParticles
 		{
 			class Effect1
@@ -316,6 +354,87 @@ class cfgWeapons
 		{
 			displayName = "MK 30-2/ABM 30mm Autocannon";
 			magazines[] = {"ADFRC_boxer_360RND_30mm_HE"};
+			class player: player
+			{
+				dispersion = 0.0015;
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_01",1.9952624,1,1500};
+					begin2[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_02",1.9952624,1,1500};
+					begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
+					soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				};
+			};
+			class close: player
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.1;
+				midRange = 400;
+				midRangeProbab = 0.7;
+				maxRange = 800;
+				maxRangeProbab = 0.8;
+			};
+			class short: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.75;
+				midRange = 800;
+				midRangeProbab = 0.8;
+				maxRange = 1200;
+				maxRangeProbab = 0.8;
+			};
+			class medium: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.8;
+				midRange = 1500;
+				midRangeProbab = 0.8;
+				maxRange = 2000;
+				maxRangeProbab = 0.7;
+			};
+			class far: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.74;
+				midRange = 2400;
+				midRangeProbab = 0.65;
+				maxRange = 3000;
+				maxRangeProbab = 0.05;
+			};
+		};
+		class AHEAD: autocannon_Base_F
+		{
+			displayName = "MK 30-2/ABM 30mm Autocannon";
+			magazines[] = {"ADFRC_boxer_360RND_30mm_AHEAD"};
 			class player: player
 			{
 				dispersion = 0.0015;
@@ -554,7 +673,7 @@ class cfgWeapons
 	class ADFRC_boxer_M2HBQCB_RWS: HMG_M2_Mounted
 	{
 		displayName="Kongsberg RWS - M2HB QCB";
-		ballisticsComputer = "2 + 16";
+		ballisticsComputer = 2+4+8+16;
 		class GunParticles
 		{
 			class effect1
